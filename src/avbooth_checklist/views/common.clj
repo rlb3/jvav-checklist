@@ -5,7 +5,7 @@
 (defpartial layout [& content]
             (html5
               [:head
-               [:title "avbooth-checklist"]
+               [:title "JV Audio / Video Booth checklist"]
                (include-css "/css/reset.css")]
               [:body
                [:div#wrapper
