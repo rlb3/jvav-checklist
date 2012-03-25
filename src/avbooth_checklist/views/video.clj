@@ -21,10 +21,13 @@
 
 
 (defpartial item [t]
-  [:li (check-box t) (label t t)])
+  [:label.checkbox [:li (check-box t) t]])
 
 (defpage [:get "/video"] []
   (common/layout
-   [:div#pre
-    [:ul
-     (map item @pre-checks)]]))
+   [:h1 [:p [:strong "Pre Service Check List"]]]
+   [:form.well
+    [:div#pre
+    [:ul.unstyled
+     (map item @pre-checks)]]]
+   [:h1 [:p "Post Server Check List"]]))
