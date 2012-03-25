@@ -10,7 +10,7 @@
   [:div#pre
    [:ul.unstyled
     (for [t tasks]
-      [:label.checkbox [:li (check-box (str type (:id t))) (:task t)]])]])
+      [:label.checkbox [:li.checkbox (check-box (str type (:id t))) (:task t)]])]])
 
 (defpage [:get "/video"] []
   (common/layout
@@ -19,4 +19,4 @@
      [:div.span10
       [:h2 [:p [:strong "Pre Service Check List"]]]
       [:form.well (build-section "pre" (get-pre-checks))]
-      [:h2 [:p "Post Server Check List"]]]]]))
+      [:h2 [:p "Post Service Check List"]]]]]))
