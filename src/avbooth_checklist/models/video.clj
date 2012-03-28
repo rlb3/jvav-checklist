@@ -20,3 +20,4 @@
 (add-pre-check "Turn on the outside monitor")
 (add-pre-check "Turn on all monitors in the booth")
 (add-pre-check "Set out camera to the correct view")
+(add-pre-check "Setup Garage Band")

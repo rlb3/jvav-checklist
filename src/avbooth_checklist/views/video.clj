@@ -7,7 +7,7 @@
         [avbooth-checklist.models.video]))
 
 (defpartial build-section [type tasks]
-  [:div#pre
+  [:div {:id type}
    [:ul.unstyled
     (for [t tasks]
       [:label.checkbox [:li.checkbox (check-box (str type (:id t))) (:task t)]])]])
